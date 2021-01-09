@@ -22,12 +22,6 @@ export default {
   databaseURL: process.env.MONGODB_URI,
 
   /**
-   * Your secret sauce
-   */
-  jwtSecret: process.env.JWT_SECRET,
-  jwtAlgorithm: process.env.JWT_ALGO,
-
-  /**
    * Used by winston logger
    */
   logs: {
@@ -55,12 +49,5 @@ export default {
    */
   api: {
     prefix: '/api',
-  },
-  /**
-   * Mailgun email credentials
-   */
-  emails: {
-    apiKey: process.env.MAILGUN_API_KEY,
-    domain: process.env.MAILGUN_DOMAIN,
   },
 };

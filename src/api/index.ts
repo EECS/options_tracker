@@ -1,14 +1,9 @@
 import { Router } from 'express';
-import auth from './routes/auth';
-import user from './routes/user';
-import agendash from './routes/agendash';
 
 // guaranteed to get dependencies
+// eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
 export default () => {
-	const app = Router();
-	auth(app);
-	user(app);
-	agendash(app);
+  const app = Router();
 
-	return app
-}
+  return app;
+};
